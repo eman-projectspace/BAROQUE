@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#div1 {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.animated-text {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 30px;
+  background: black;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: scrollText 4s infinite;
+}
+
+.line {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  line-height: 35px;
+}
+
+
+.toptext {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.toptext:hover {
+  text-decoration: none;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(-60px);
+  }
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  color: black;
+  padding: 0 20px;
+}
+
+.header:hover {
+  background-color: white;
+  transition: all 0.5s ease-in;
+}
+
+/* Right Header (Hidden on Small Screens) */
+#right-header {
+  display: flex;
+  width: 300px;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  #right-header {
+    display: none;
+  }
+}
+
+/* Header Items */
+#hamb,
+#baroquetext,
+#pakistan,
+#arrow,
+#person,
+#search,
+#lock {
+  cursor: pointer;
+  line-height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#baroquetext {
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+#pakistan {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.flex-con {
+  display: flex;
+  border: 2px saddlebrown green;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width:750px) {
+  .flex-con {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Img information */
+.container {
+  display: flex;
+  height: 550px;
+  width: 500px;
+  margin-top: 50px;
+  row-gap: 10px;
+  column-gap: 100px;
+  margin-bottom: 50px;
+}
+
+#img-hw {
+  height: 600px;
+  width: 700px;
+}
+
+@media (max-width:750px) {
+  #img-hw {
+    height: 600px;
+    width: 400px;
+  }
+}
+
+.item {
+  height: 200px;
+  width: 700px;
+  border: none;
+
+}
+
+#itemtext {
+  height: 130px;
+  margin-top: -10px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', ;
+
+}
+
+#select1 {
+  width: 130px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#select1:active {
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+.select2 {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  color: black;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.select2:active {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+#default {
+  width: 110px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#default1 {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  color: black;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 15px;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#cartbutton:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+.cartbutton {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 350px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+.cartbutton:hover {
+  transition: 2s all ease;
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+a:hover {
+  color: black;
+}
+
+/* IMIGES  Double */
+.container2 {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  row-gap: 10px;
+
+}
+
+
+
+/* .container3 {
+  bottom: 0;
+  position: sticky;
+  margin-left: 800px;
+  border: none;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+} */
+
+/* .item3 {
+  border: none;
+  height: 50px;
+  width: 290px;
+
+
+} */
+
+#textr {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+
+
+.container4 {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  width: 1200px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  column-gap: 25px;
+  margin-bottom: 150px;
+  line-height: 30px;
+  color: black;
+}
+
+@media (max-width:750px) {
+  .container4 {
+    margin-left: 100px;
+    margin-right: 0px;
+    height: 1600px;
+    color: black;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item4 {
+  height: 300px;
+  width: 250px;
+  cursor: pointer;
+}
+
+
+.containerlast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  width: 1250px;
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+
+@media (max-width:750px) {
+  .containerlast {
+    height: 700px;
+    width: 300px;
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+  }
+}
+
+.itemlast {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 180px;
+  cursor: pointer;
+  line-height: 30px;
+  color: rgb(98, 96, 96);
+}
+
+@media (max-width:750px) {
+  .itemlast {
+    width: 250px;
+    text-align: center;
+  }
+}
