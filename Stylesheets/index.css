@@ -332,6 +332,8 @@
 
  .video-item {
      position: relative;
+     justify-content: space-around;
+
  }
 
  .video-btn {
@@ -344,8 +346,21 @@
      font-family: "Proza Libre", sans-serif;
      position: absolute;
      bottom: 35px;
-     right: 150px;
+     left: 100px;
+ }
 
+ @media (max-width:1000px) {
+     .video-btn {
+         left: 150px;
+     }
+
+ }
+
+ @media (max-width:500px) {
+     .video-btn {
+         left: 100px;
+
+     }
  }
 
  /*  */
